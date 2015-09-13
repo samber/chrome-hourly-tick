@@ -4,7 +4,7 @@ chrome.alarms.create("one-hour-tick", {
 })
 
 chrome.alarms.onAlarm.addListener(function(alarm) {
-    if (Date.now() % 60 == 0) {
+    if (Math.floor(Date.now() / 1000 / 60) % 60 == 0) {
 	var audio = new Audio("./tick.mp3");
 	audio.play();
     }

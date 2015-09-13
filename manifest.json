@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+
+    "name": "Tick",
+    "description": "Makes a Tick sound every hour to keep sense of time.",
+    "version": "1.0",
+    "permissions": [
+	"alarms",
+	"background"
+    ],
+    "app": {
+	"background": {
+	    "scripts": ["background.js"]
+	}
+    }
+}
